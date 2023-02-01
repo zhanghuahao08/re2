@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>天数计算</title>
+    <script type="text/javascript">
+    function getsum(){var numend = parseInt(document.getElementById('numend').value,10);var sum=0;for(var i=1;i<=numend;i++){sum+=i;}document.getElementById('sum').value=sum;}
+    </script>
+ </head>
+ <style>
+    .numend{
+      text-align: center;
+    }
+    body{
+        height: 100vh;
+        background-color: rgb(184, 221, 253)
+    }
+    *{
+      flex-direction: column;
+    }
+ </style>
+ <body>
+    <biv>请输入天数：</biv>
+      <biv><input type="text" name="numend" id="numend" />
+      <input type="button" name="btn" onclick="getsum()" value="计算"/>
+      <input type="text" name="sum" id="sum" />
+    </biv>
+    <biv>元</biv>
+</body>
+</html>
